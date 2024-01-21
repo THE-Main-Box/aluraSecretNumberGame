@@ -10,7 +10,7 @@ const restartButton = document.querySelector("#reiniciar");
 const Rarea = document.querySelector(".container__input");
 
 const generateAleatoryNumber = () => {
-  SecretNumber = Math.floor(Math.random() * 10 + 1);
+  SecretNumber = Math.floor(Math.random() * 100 + 1);
   numberList.push(SecretNumber);
 
   if (SecretNumber === lastNumber) {
@@ -30,7 +30,7 @@ function exibirTextoNaTela(tag, texto) {
 texto="Jogo do número Secreto"
 exibirTextoNaTela(".container__texto h1", texto);
 
-texto = "escolha um número entre 1 e 10";
+texto = "escolha um número entre 1 e 100";
 exibirTextoNaTela(".texto__paragrafo", texto);
 
 const verificarChute = () => {
