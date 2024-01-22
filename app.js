@@ -10,7 +10,7 @@ const restartButton = document.querySelector("#reiniciar");
 const Rarea = document.querySelector(".container__input");
 
 const generateAleatoryNumber = () => {
-  SecretNumber = Math.floor(Math.random() * 100 + 1);
+  SecretNumber = Math.floor(Math.random() * 10 + 1);
   numberList.push(SecretNumber);
 
   if (SecretNumber === lastNumber) {
