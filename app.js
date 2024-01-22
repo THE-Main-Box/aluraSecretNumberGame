@@ -7,7 +7,7 @@ const lastNumber = numberList[numberList.length - 1];
 
 const answerButton = document.querySelector(".container__botao");
 const restartButton = document.querySelector("#reiniciar");
-const Rarea = document.querySelector(".container__input");
+const Restartarea = document.querySelector(".container__input");
 
 const generateAleatoryNumber = () => {
   SecretNumber = Math.floor(Math.random() * 100 + 1);
